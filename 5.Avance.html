@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>ELEMENTS</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+
+ <!--Seccion del encabezado comienzo-->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Hand Speek.png" alt="">
+            <span>
+              Hand Speaker
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="2.Proyecto.html">Proyecto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="3.Equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="4.Desarrollo.html">Desarrollo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="5.Avance.html">Avance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="6.Contactanos.html">Contactanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+<!--Seccion del encabezado final-->
+
+<!-- Seccion sobre nuestro trabajo -->
+ <section class="news_section layout_padding">
+  <div class="container">
+    <div class="d-flex flex-column align-items-end">
+      <div class="custom_heading-container">
+        <hr>
+        <h2>
+          Te contamos paso a paso
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/WhatsApp Image 2025-05-27 at 18.25.11.jpeg" alt="">
+          </div>
+          <div class="action-box">
+            <div class="action">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+            </div>
+          </div>
+          <div class="detail-box">
+            <h4>
+              El comienzo
+            </h4>
+            <p>
+              El proyecto comenzó con la recopilación de los componentes necesarios para construir un guante capaz de traducir lenguaje de señas a texto o voz. La idea principal era desarrollar una herramienta accesible para mejorar la comunicación de personas con discapacidad auditiva.
+
+              Recolección de Materiales
+              La primera etapa consistió en seleccionar los materiales más adecuados. Se optó por utilizar un guante de tela flexible, lo suficientemente ajustado para que los sensores tuvieran un contacto constante con los dedos. Los principales componentes incluidos fueron:
+
+              Sensores flex (uno por dedo): Estos sensores miden el grado de flexión de los dedos, lo cual es crucial para identificar las diferentes señas.
+
+              Placa Arduino Uno/Nano: Como cerebro del sistema para la lectura de datos y procesamiento.
+
+              Cables jumper y protoboard: Para las conexiones iniciales durante la etapa de pruebas.
+
+              Módulo Bluetooth (opcional): Para enviar los datos a una app móvil o pantalla externa.
+
+              Ensamblaje Inicial
+              Una vez reunidas las piezas, se procedió al armado del guante:
+
+              Los sensores flex se colocaron en la parte superior de los dedos, sujetos al guante con cinta o cosidos ligeramente.
+
+              Los cables se conectaron desde cada sensor hacia la placa Arduino.
+
+              Se añadieron otros sensores, en el dorso del guante para captar gestos más amplios.
+
+              Programación en Arduino
+              Con el hardware listo, comenzó la fase de programación. Se utilizaron las siguientes estrategias:
+
+              Lectura analógica de los sensores flex para obtener valores según la flexión de los dedos.
+
+              Uso de bibliotecas como Wire.h y Adafruit_Sensor para manejar el acelerómetro/giroscopio.
+
+              Se desarrolló un código que traduce ciertos rangos de valores a letras o palabras.
+
+              Se hizo una calibración inicial, donde se registraron los valores típicos de cada seña para establecer umbrales.
+
+              Se imprimieron los datos en el monitor serial, lo que permitió hacer pruebas en tiempo real y ajustar el código.
+
+              Este comienzo fue esencial para entender cómo cada componente respondía, identificar errores y establecer una base sólida para las siguientes etapas del proyecto: la traducción precisa de señas y la implementación de salida visual o sonora.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/sensorf.jpg" alt="">
+          </div>
+          <div class="action-box">
+            <div class="action">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+            </div>
+          </div>
+          <div class="detail-box">
+            <h4>
+              Nuestro Reto
+            </h4>
+            <p>
+              Una de las etapas más complejas del desarrollo del guante traductor de señas fue la calibración individual de cada sensor flex y su correcta interpretación dentro del código de programación en Arduino. Aunque los sensores funcionaban técnicamente, lograr que sus lecturas fueran consistentes y útiles para traducir gestos reales fue un desafío considerable.
+
+              Problemas Iniciales
+              Cada sensor flex entregaba valores analógicos distintos, incluso estando en reposo. Esto se debía a pequeñas variaciones en su fabricación, su posición sobre el dedo o la presión ejercida al usar el guante. Además, la flexión de cada dedo genera un rango diferente de valores, lo cual hacía imposible usar un solo conjunto de umbrales para todas las posiciones.
+
+              Proceso de Calibración
+              Para solucionar esto, se diseñó un proceso de calibración manual:
+
+              Lectura base: Se registraron los valores mínimos y máximos de cada sensor con el dedo totalmente extendido y completamente flexionado.
+
+              Promedio personalizado: A partir de estas lecturas, se establecieron rangos específicos para cada dedo, permitiendo reconocer cuándo un dedo estaba "doblado" o "estirado".
+
+              Pruebas con señas reales: Se eligieron algunas letras o gestos básicos del lenguaje de señas y se repitieron múltiples veces, verificando si los valores obtenidos coincidían con los rangos definidos.
+
+              Ajustes finos: Se implementaron pequeñas tolerancias en los rangos para evitar falsos positivos causados por temblores de la mano o movimientos involuntarios.
+
+              Aprendizaje y Resultado
+              Este proceso fue el que más tiempo y pruebas demandó, pero también el que permitió que el guante comenzara a traducir con mayor precisión. La clave fue entender que cada mano y cada sensor tienen un comportamiento único, por lo tanto, la calibración debía adaptarse al usuario y al hardware específico.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/WhatsApp Image 2025-05-28 at 11.51.14.jpeg" alt="">
+          </div>
+          <div class="action-box">
+            <div class="action">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+            </div>
+          </div>
+          <div class="detail-box">
+            <h4>
+              Nuestro producto final
+            </h4>
+            <p>
+              Tras varias etapas de diseño, ensamblaje, calibración y programación, el producto final es un guante traductor de señas funcional, diseñado con el objetivo de facilitar la comunicación de personas con discapacidad auditiva o del habla. El sistema logra interpretar algunos gestos del lenguaje de señas y reproducir su significado en forma de voz.
+
+              Características del Guante
+              Guante de tela flexible: Se eligió un guante ajustado, pero cómodo, que permite el libre movimiento de los dedos y mantiene los sensores en su lugar sin desplazamientos.
+
+              Sensores flex programados: Cada dedo del guante lleva incorporado un sensor flex que detecta el grado de flexión del dedo. Estos sensores fueron cuidadosamente calibrados para reconocer con precisión posiciones específicas de los dedos y combinaciones que representan letras o palabras del lenguaje de señas.
+
+              Lectura y procesamiento con Arduino: Todos los sensores están conectados a una placa Arduino Nano/Uno, que recibe las señales analógicas, las interpreta mediante condicionales programadas y determina cuál es la seña realizada.
+
+              DFPlayer Mini para salida de voz: El guante integra un módulo DFPlayer Mini, conectado al Arduino, que permite reproducir archivos de audio almacenados en una tarjeta microSD. Cada seña reconocida activa una pista de audio correspondiente con la palabra hablada. Por ejemplo, al formar la seña de “Hola”, el DFPlayer reproduce un archivo de voz diciendo “Hola”.
+
+              Funcionamiento
+              El usuario realiza una seña con la mano.
+
+              Los sensores flex capturan el estado de cada dedo y envían los datos al Arduino.
+
+              El código analiza la combinación de movimientos y la compara con los patrones preprogramados.
+
+              Si se detecta una seña válida, el Arduino envía una señal al DFPlayer para que reproduzca el archivo de audio correspondiente.
+
+              Un pequeño altavoz conectado al DFPlayer emite la palabra en voz clara.
+
+              Resultado
+              El guante permite traducir un conjunto básico de señas a audio en tiempo real, demostrando que es posible crear una herramienta accesible y funcional con materiales de bajo costo y tecnología abierta. El proyecto no solo aporta una solución tecnológica, sino que también representa un paso hacia la inclusión social de las personas con discapacidad comunicacional.
+            </p>
+            <div>
+              <a href="index.html">
+                Regresar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin de la seccion sobre nuestro trabajo -->
+
+<!-- Seccion Paginas -->
+   <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_social">
+        <div>
+          <a href="https://www.facebook.com/share/1AeXe4BqZG/">
+            <img src="images/fb.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://x.com/ThisCarlitos30?t=h33h4-jdXoX7QOjr7cj2MA&s=09">
+            <img src="images/twitter.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/jose-carlos-moreno-0631022b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <img src="images/linkedin.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/this.is_carlitoss?igsh=anRhajZ1NzB5ZTRr">
+            <img src="images/insta.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div>
+        <p>
+     Forma parte del proyecto "Hand Speaker", un guante inteligente capaz de traducir lenguaje de señas en tiempo real.
+Desarrollado por 3er Semestre – Ingeniería Biomédica MB-102.
+        </p>
+      </div>
+    </div>
+  </section>
+<!-- Fin Seccion Paginas -->
+
+<!-- Seccion Pie -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2025 Todos los derechos reservados
+      <a href="https://www.univalle.edu/?page_id=200/#IBI">Universidad Univalle</a>
+    </p>
+  </section>
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</body>
+
+</html>
+<!-- Fin Seccion Pie -->
